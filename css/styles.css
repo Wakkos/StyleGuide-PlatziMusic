@@ -29,8 +29,12 @@ section {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  background-color: blue;
   background-color: #bfbfbf;
   padding: 24px; }
+  @media only screen and (min-width: 800px) {
+    section {
+      background-color: red; } }
 
 .max-width--huge {
   max-width: 80%;

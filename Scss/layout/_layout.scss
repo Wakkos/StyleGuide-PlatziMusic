@@ -1,0 +1,12 @@
+section {
+   @include max-width; 
+   background-color: $color-lightgrey;
+   padding: $padding;
+}
+.max-width--huge {
+    @include max-width(80%);
+}
+
+header {
+    background-color: $color-brand;
+}

@@ -1,0 +1,9 @@
+/*--------------------------------*\
+    $MIXINS
+\*--------------------------------*/
+
+@mixin max-width($maxwidth: $page-max-width) {
+    max-width: $maxwidth;
+    margin-left: auto;
+    margin-right: auto;
+}

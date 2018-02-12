@@ -8,8 +8,23 @@
 $color-brand: #ea83ee;
 $color-secondary: rgb(219, 216, 121);
 
-$black : rgb(0,0,0);
-$darkgrey: #4d4d4d;
-$grey: #737373;
-$lightgrey: #bfbfbf;
-$white: rgb(255, 255, 255);
+$color-black : rgb(0,0,0);
+$color-darkgrey: #4d4d4d;
+$color-grey: #737373;
+$color-lightgrey: #bfbfbf;
+$color-white: rgb(255, 255, 255);
+
+
+// Texturas
+$color-alert: rgb(252,228,207); 
+$color-error: rgb(218,79,73);
+$color-info:   rgb(66, 184, 221);
+$color-success: rgb(91,183,91);
+
+// Tipografía
+
+$basefont: 'Quicksand', sans-serif;
+$basefontsize: 16px;
+
+$buttoncolor: $color-white;
+$buttonbackgroundcolor: $color-brand;

@@ -19,6 +19,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/index.html",
+		"oF": 0
+		},
 	"\/Scss\/_tablas.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -28,6 +35,71 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/Scss\/_tablas.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/Scss\/base\/_botones.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/Scss\/base\/_botones.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/Scss\/base\/_links.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/Scss\/base\/_links.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/Scss\/base\/_tipografia.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/Scss\/base\/_tipografia.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/Scss\/components\/_grids.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/Scss\/components\/_grids.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/Scss\/components\/_utilities.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/Scss\/components\/_utilities.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

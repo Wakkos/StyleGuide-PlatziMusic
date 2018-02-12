@@ -7,6 +7,18 @@ table tr:hover {
 
 /*--------------------------------*    $BUTTOMS
 \*--------------------------------*/
+.btn {
+  display: inline-block;
+  color: white;
+  background-color: #ea83ee;
+  line-height: 2.5;
+  border-radius: 3px;
+  font-size: 24px; }
+  .btn__icon {
+    font-size: .6em; }
+  .btn.btn--info {
+    background-color: #42b8dd; }
+
 /*--------------------------------*    $TIPOGRAFIA
 \*--------------------------------*/
 /*--------------------------------*    $GRIDS

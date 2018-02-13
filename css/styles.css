@@ -16,7 +16,7 @@ table tr:hover {
 /**
  * .btn es la clase principal para definir un botón
  */
-.btn, .btn--info, .btn--error, .btn--success, .btn--primary, .btn--secondary, .btn--disabled, .btn--primary {
+.btn, .btn--disabled, .btn--info, .btn--error, .btn--success, .btn--primary, .btn--secondary {
   display: inline-block;
   line-height: 2.2;
   color: white;
@@ -38,17 +38,15 @@ table tr:hover {
  	* Nadie quiere un botón con texto subrayado cuando
  	* hacemos hover.
  	*/ }
-  .btn:hover, .btn--info:hover, .btn--error:hover, .btn--success:hover, .btn--primary:hover, .btn--secondary:hover, .btn--disabled:hover, .btn--primary:hover {
+  .btn:hover, .btn--disabled:hover, .btn--info:hover, .btn--error:hover, .btn--success:hover, .btn--primary:hover, .btn--secondary:hover {
     text-decoration: none;
     color: white; }
-  .btn:active, .btn--info:active, .btn--error:active, .btn--success:active, .btn--primary:active, .btn--secondary:active, .btn--disabled:active, .btn:focus, .btn--info:focus, .btn--error:focus, .btn--success:focus, .btn--primary:focus, .btn--secondary:focus, .btn--disabled:focus, .btn--primary:active, .btn--primary:focus {
+  .btn:active, .btn--disabled:active, .btn--info:active, .btn--error:active, .btn--success:active, .btn--primary:active, .btn--secondary:active, .btn:focus, .btn--disabled:focus, .btn--info:focus, .btn--error:focus, .btn--success:focus, .btn--primary:focus, .btn--secondary:focus {
     outline: none; }
-  .btn:visited, .btn--info:visited, .btn--error:visited, .btn--success:visited, .btn--primary:visited, .btn--secondary:visited, .btn--disabled:visited, .btn--primary:visited {
+  .btn:visited, .btn--disabled:visited, .btn--info:visited, .btn--error:visited, .btn--success:visited, .btn--primary:visited, .btn--secondary:visited {
     color: white;
     text-decoration: none; }
-  .btn__icon, .btn--primary__icon {
-    font-size: .6em; }
-  .btn.btn--info, .btn--info, .btn--primary.btn--info {
+  .btn--info {
     background-color: #42b8dd; }
 
 /**

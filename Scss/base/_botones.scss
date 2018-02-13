@@ -10,7 +10,7 @@
  /**
  * .btn es la clase principal para definir un botón
  */
- .btn, .btn--primary {
+ %btn {
 	display: inline-block;
 	line-height: 2.2;
 	color: $buttoncolor;
@@ -57,14 +57,16 @@
 
 
 
-
+.btn {
+    @extend %btn;
+}
 
 
 /**
 * Botón de Info
 */
 .btn--info {
-    @extend .btn;
+    @extend %btn;
     color: $color-info;
     &:hover {
         color: $color-info;
@@ -76,12 +78,11 @@
 
 
 
-
 /**
 * Botón de Error
 */
 .btn--error {
-    @extend .btn;
+    @extend %btn;
 	color: $color-error;
 	&:hover {
         color: $color-error;
@@ -103,7 +104,7 @@
 */
 
 .btn--success {
-    @extend .btn;
+    @extend %btn;
     color: $color-success;
     &:hover {
         color: $color-success;
@@ -120,12 +121,12 @@
 */
 
 .btn--primary {
-    @extend .btn;
+    @extend %btn;
     background-color: $buttonbackground;
 }
 
 .btn--secondary {
-    @extend .btn;
+    @extend %btn;
     background-color: $color-secondary;
 }
 

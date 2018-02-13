@@ -2,14 +2,23 @@
     $MIXINS
 \*--------------------------------*/
 
+// Mixin para centrar y añadir ancho máximo a un elemento
 @mixin max-width($maxwidth: $page-max-width) {
     max-width: $maxwidth;
     margin-left: auto;
     margin-right: auto;
 }
 
+
+//Mixin para breakpoints
 @mixin respond-to($width) {
     @media only screen and (min-width: $width) {
         @content;
     }
+}
+
+
+//Mixin para añadir el mismo degradado cuando haga falta:
+@mixin pm-gradient {
+   background: linear-gradient(to left, rgba(81, 121, 255, 0.5), rgba(233, 131, 238, 0.5));
 }

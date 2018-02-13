@@ -1,3 +1,46 @@
+/*------------------------------------*\
+    $SITIO
+\*------------------------------------*/
+
+
+@-webkit-viewport {
+	width : device-width;
+}
+
+@-moz-viewport {
+	width : device-width;
+}
+
+@-ms-viewport {
+	width : device-width;
+}
+
+@-o-viewport {
+	width : device-width;
+}
+
+@viewport {
+	width : device-width;
+}
+
+html {
+	background : $color-background;
+	font-size : 87.5%;
+	-webkit-overflow-scrolling : touch;
+	-webkit-tap-highlight-color : transparent;
+	-webkit-text-size-adjust : 100%;
+	-ms-text-size-adjust : 100%;
+}
+
+body {
+	margin : 0;
+	padding : 0;
+	width : 100%;
+	background-color : transparent;
+	font-family : $basefont;
+	line-height : $lineheight;
+	color : $textcolor;
+}
 section {
    @include max-width; 
    background-color: blue;
@@ -11,6 +54,32 @@ section {
     @include max-width(80%);
 }
 
-header {
-    background-color: $color-brand;
+.header {
+    @include pm-gradient;
+    padding: 100px 0 186px;
+    text-align: center;
+    padding:($padding * 4) 0 ;
+    color: $color-grey;
 }
+
+// Bloques donde implementamos los elementos de la guía de estilos
+.block {
+    @include max-width;
+    margin-bottom: $padding;
+    background-color: $color-white;
+    position: relative;
+    &__body {
+        padding: $padding;
+        background-color: $color-white;
+        position: relative;
+    }
+    &__title {
+        background-color: $color-white;
+        padding: ($padding / 2) $padding;
+        font-size: 28px;
+        font-weight: bold;
+        color: $color-secondary;
+        border-bottom: 1px solid $color-lightgrey;
+    }
+}
+    

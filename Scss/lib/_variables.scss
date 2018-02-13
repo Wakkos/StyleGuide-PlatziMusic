@@ -17,7 +17,7 @@ $color-darkgrey: darken($color-grey, 25%);
 $color-lightgrey: lighten($color-grey, 25%);
 $color-white: rgb(255, 255, 255);
 
-
+$color-border: $color-darkgrey;
 // Texturas
 $color-alert: rgb(252,228,207); 
 $color-error: rgb(218,79,73);
@@ -29,9 +29,17 @@ $color-success: rgb(91,183,91);
 
 $basefont: 'Quicksand', sans-serif;
 $basefontsize: 16px;
+$baseheadingfont: $basefont;
+$baseheadingfontweight: bold;
+$altfont : Georgia, Times, "Times New Roman";
+$codefont : "Courier New", monospace;
+$lineheight: 1.5;
+$textcolor: $color-black;
+$color-background: darken($color-white, 5);
+
 
 $buttoncolor: $color-white;
-$buttonbackgroundcolor: $color-brand;
+$buttonbackground: $color-brand;
 $buttonfontsize: $basefontsize * 1.5;
 
 //Constantes

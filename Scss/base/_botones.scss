@@ -1,13 +1,51 @@
-/*--------------------------------*\
-    $BUTTOMS
-\*--------------------------------*/
-.btn {
-    display: inline-block;
-    color: $buttoncolor;
-    background-color: $buttonbackgroundcolor;
-    line-height: 2.5;
+
+/*------------------------------------*\
+    $BOTONES
+\*------------------------------------*/
+/*
+ * Definimos los botones y sus variantes
+ */
+
+
+ /**
+ * .btn es la clase principal para definir un botón
+ */
+ .btn, .btn--primary {
+	display: inline-block;
+	line-height: 2.2;
+	color: $buttoncolor;
+	text-align: center;
+	vertical-align: middle;
+    font-size: fs(normal);
+    text-transform: uppercase;
+	white-space: nowrap;
+    border: none;
+    cursor: pointer;
+	margin:0;
+	padding-top:   0;
+   	padding-bottom:0;
+   	padding-right:1em;
+   	padding-left: 1em;
     border-radius: $border-radius;
-    font-size: $buttonfontsize;
+    text-decoration: none;
+	/**
+ 	* Nadie quiere un botón con texto subrayado cuando
+ 	* hacemos hover.
+ 	*/
+
+	&:hover {
+		text-decoration: none;
+        color: $buttoncolor;
+	}
+	&:active,
+    &:focus{
+        outline:none;
+    }
+    &:visited {
+    color: $buttoncolor;
+    text-decoration: none;
+	}
+
     &__icon {
         font-size: .6em;
     }
@@ -16,6 +54,127 @@
         background-color: $color-info;
     }
 }
-// B: .btn
-//     E
-// M
+
+
+
+
+
+
+/**
+* Botón de Info
+*/
+.btn--info {
+    @extend .btn;
+    color: $color-info;
+    &:hover {
+        color: $color-info;
+    }
+    &:visited {
+        color: $color-info;
+    }
+}
+
+
+
+
+/**
+* Botón de Error
+*/
+.btn--error {
+    @extend .btn;
+	color: $color-error;
+	&:hover {
+        color: $color-error;
+	}
+	&:visited {
+		color: $color-error;
+	}
+}
+
+
+
+
+
+
+
+
+/**
+* Botón de OK
+*/
+
+.btn--success {
+    @extend .btn;
+    color: $color-success;
+    &:hover {
+        color: $color-success;
+    }
+    &:visited {
+        color: $color-success;
+    }
+}
+
+
+
+/**
+* Botón principal
+*/
+
+.btn--primary {
+    @extend .btn;
+    background-color: $buttonbackground;
+}
+
+.btn--secondary {
+    @extend .btn;
+    background-color: $color-secondary;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $BOTONES-TAMAÑOS
+\*------------------------------------*/
+/**
+ * Variantes de los botones por tamaño.
+ *
+ */
+
+.btn--mini{
+    padding-right:0.5em;
+    padding-left: 0.5em;
+    line-height:1.5;
+    font-size: 12px;
+}
+
+.btn--small{
+    padding-right:1.5em;
+    padding-left: 1.5em;
+    line-height:2;
+    font-size: 14px;
+}
+
+.btn--big{
+    padding-right:3em;
+    padding-left: 3em;
+    line-height:3;
+    font-size: 18px;
+}
+
+.btn--block {
+    display: block;
+}
+
+
+
+/**
+* Botón no disponible
+*/
+.btn--disabled {
+    @extend .btn;
+    opacity: 5;
+	cursor: not-allowed;
+    background-color: $color-lightgrey;
+}
+

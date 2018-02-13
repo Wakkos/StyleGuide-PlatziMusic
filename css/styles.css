@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*--------------------------------*    $COLORS
 \*--------------------------------*/*
 * Branding Colors
@@ -7,24 +8,305 @@
 table tr:hover {
   background-color: #dbd879; }
 
-/*--------------------------------*    $BUTTOMS
-\*--------------------------------*/
-.btn {
+/*------------------------------------*    $BOTONES
+\*------------------------------------*/
+/*
+ * Definimos los botones y sus variantes
+ */
+/**
+ * .btn es la clase principal para definir un botón
+ */
+.btn, .btn--info, .btn--error, .btn--success, .btn--primary, .btn--secondary, .btn--disabled, .btn--primary {
   display: inline-block;
+  line-height: 2.2;
   color: white;
-  background-color: #ea83ee;
-  line-height: 2.5;
+  text-align: center;
+  vertical-align: middle;
+  font-size: fs(normal);
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 1em;
+  padding-left: 1em;
   border-radius: 3px;
-  font-size: 24px; }
-  .btn__icon {
+  text-decoration: none;
+  /**
+ 	* Nadie quiere un botón con texto subrayado cuando
+ 	* hacemos hover.
+ 	*/ }
+  .btn:hover, .btn--info:hover, .btn--error:hover, .btn--success:hover, .btn--primary:hover, .btn--secondary:hover, .btn--disabled:hover, .btn--primary:hover {
+    text-decoration: none;
+    color: white; }
+  .btn:active, .btn--info:active, .btn--error:active, .btn--success:active, .btn--primary:active, .btn--secondary:active, .btn--disabled:active, .btn:focus, .btn--info:focus, .btn--error:focus, .btn--success:focus, .btn--primary:focus, .btn--secondary:focus, .btn--disabled:focus, .btn--primary:active, .btn--primary:focus {
+    outline: none; }
+  .btn:visited, .btn--info:visited, .btn--error:visited, .btn--success:visited, .btn--primary:visited, .btn--secondary:visited, .btn--disabled:visited, .btn--primary:visited {
+    color: white;
+    text-decoration: none; }
+  .btn__icon, .btn--primary__icon {
     font-size: .6em; }
-  .btn.btn--info {
+  .btn.btn--info, .btn--info, .btn--primary.btn--info {
     background-color: #42b8dd; }
+
+/**
+* Botón de Info
+*/
+.btn--info {
+  color: #42b8dd; }
+  .btn--info:hover {
+    color: #42b8dd; }
+  .btn--info:visited {
+    color: #42b8dd; }
+
+/**
+* Botón de Error
+*/
+.btn--error {
+  color: #da4f49; }
+  .btn--error:hover {
+    color: #da4f49; }
+  .btn--error:visited {
+    color: #da4f49; }
+
+/**
+* Botón de OK
+*/
+.btn--success {
+  color: #5bb75b; }
+  .btn--success:hover {
+    color: #5bb75b; }
+  .btn--success:visited {
+    color: #5bb75b; }
+
+/**
+* Botón principal
+*/
+.btn--primary {
+  background-color: #ea83ee; }
+
+.btn--secondary {
+  background-color: #dbd879; }
+
+/*------------------------------------*    $BOTONES-TAMAÑOS
+\*------------------------------------*/
+/**
+ * Variantes de los botones por tamaño.
+ *
+ */
+.btn--mini {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  line-height: 1.5;
+  font-size: 12px; }
+
+.btn--small {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  line-height: 2;
+  font-size: 14px; }
+
+.btn--big {
+  padding-right: 3em;
+  padding-left: 3em;
+  line-height: 3;
+  font-size: 18px; }
+
+.btn--block {
+  display: block; }
+
+/**
+* Botón no disponible
+*/
+.btn--disabled {
+  opacity: 5;
+  cursor: not-allowed;
+  background-color: #b3b3b3; }
 
 /*--------------------------------*    $TIPOGRAFIA
 \*--------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  text-rendering: optimizelegibility; }
+  h1.altheader,
+  h2.altheader,
+  h3.altheader,
+  h4.altheader,
+  h5.altheader,
+  h6.altheader {
+    color: #737373;
+    text-transform: uppercase;
+    display: block; }
+
+p,
+ol,
+ul,
+dl,
+address {
+  margin-bottom: 24px;
+  line-height: 1.5; }
+
+small {
+  font-size: fs(x-small);
+  color: #737373; }
+
+ul,
+ol {
+  margin: 0 0 1.5 0;
+  padding: 0 0 0 24px; }
+
+li ul,
+li ol {
+  margin: 0; }
+
+blockquote {
+  margin: 0 0 1.5 0;
+  padding-left: 24px;
+  border-left: 2px solid #333333;
+  font-family: Georgia, Times, "Times New Roman";
+  font-style: normal; }
+  blockquote p {
+    font-size: fs(small);
+    color: #737373;
+    font-style: italic;
+    line-height: 1.5; }
+
+q {
+  quotes: none;
+  font-style: italic; }
+
+blockquote p::before,
+blockquote p::after,
+q:before,
+q:after {
+  content: ""; }
+
+cite {
+  font-style: normal; }
+
+dl,
+dd {
+  margin-bottom: 1.5; }
+
+dt {
+  font-weight: bold; }
+
+.dl-horizontal dt {
+  float: left;
+  clear: left;
+  width: 20.25%;
+  text-align: right; }
+
+.dl-horizontal dd {
+  margin-left: 22.78%; }
+
+abbr[title] {
+  border-bottom: 1px dotted #333333;
+  cursor: help; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+ins {
+  background-color: white;
+  color: black;
+  text-decoration: none; }
+
+mark {
+  background-color: yellow;
+  color: black; }
+
+pre,
+code,
+kbd,
+samp {
+  font-family: "Courier New", monospace;
+  font-size: fs(small);
+  line-height: 1.5; }
+
+code {
+  background-color: #f5f2f0;
+  padding: 0.1em 0.3em;
+  border-radius: 3px; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+sub,
+sup {
+  position: relative;
+  font-size: fs(x-small);
+  line-height: 0;
+  vertical-align: 1.5; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+hr {
+  clear: both;
+  display: block;
+  margin: 1.5 0;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #333333; }
+
+.intro {
+  font-weight: bold; }
+
 /*--------------------------------*    $GRIDS
 \*--------------------------------*/
+/*------------------------------------*    $SITIO
+\*------------------------------------*/
+@-webkit-viewport {
+  width: device-width; }
+
+@-moz-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }
+
+html {
+  background: #f2f2f2;
+  font-size: 87.5%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+  color: black; }
+
 section {
   max-width: 800px;
   margin-left: auto;
@@ -41,8 +323,31 @@ section {
   margin-left: auto;
   margin-right: auto; }
 
-header {
-  background-color: #ea83ee; }
+.header {
+  background: linear-gradient(to left, rgba(81, 121, 255, 0.5), rgba(233, 131, 238, 0.5));
+  padding: 100px 0 186px;
+  text-align: center;
+  padding: 96px 0;
+  color: #737373; }
+
+.block {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  background-color: white;
+  position: relative; }
+  .block__body {
+    padding: 24px;
+    background-color: white;
+    position: relative; }
+  .block__title {
+    background-color: white;
+    padding: 12px 24px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #dbd879;
+    border-bottom: 1px solid #b3b3b3; }
 
 /*--------------------------------*    $UTILITIES
 \*--------------------------------*/

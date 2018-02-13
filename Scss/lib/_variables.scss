@@ -8,16 +8,20 @@
 $color-brand: #ea83ee;
 $color-secondary: rgb(219, 216, 121);
 
-$color-black : rgb(0,0,0);
-$color-darkgrey: #4d4d4d;
+
 $color-grey: #737373;
-$color-lightgrey: #bfbfbf;
+
+$color-black : rgb(0,0,0);
+$color-darkgrey: darken($color-grey, 25%);
+
+$color-lightgrey: lighten($color-grey, 25%);
 $color-white: rgb(255, 255, 255);
 
 
 // Texturas
 $color-alert: rgb(252,228,207); 
 $color-error: rgb(218,79,73);
+$color-invert: invert($color-error);
 $color-info:   rgb(66, 184, 221);
 $color-success: rgb(91,183,91);
 

@@ -143,6 +143,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/Scss\/Styleguide\/_styleguide-elements.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/Scss\/Styleguide\/_styleguide-elements.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/Scss\/Styleguide\/styleguide.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Scss\/Styleguide\/styleguide.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/Scss\/styles.scss": {
 		"aP": 0,
 		"bl": 0,

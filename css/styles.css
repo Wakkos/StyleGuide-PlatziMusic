@@ -173,7 +173,6 @@ blockquote {
   font-family: Georgia, Times, "Times New Roman";
   font-style: normal; }
   blockquote p {
-    font-size: fs(small);
     color: #737373;
     font-style: italic;
     line-height: 1.5; }

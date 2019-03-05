@@ -1,0 +1,42 @@
+/*Importacion de archivos parciales scss
+========================================*/
+	
+	/*Librerias, Settings y variables
+	=================================*/
+	@import "_variables.scss";
+
+	/*Elementos bases HTML
+	=========================*/
+	@import "basics-html/containers/_div.scss";
+	@import "basics-html/containers/_section.scss";
+
+	@import "basics-html/inputs/_buttons.scss";
+	@import "basics-html/inputs/_form.scss";
+	@import "basics-html/text/_titles.scss";
+
+	/*Elementos de interfaz
+	=========================*/
+
+	/*Utilities
+	=============*/
+	@import "utilities/_utilities.scss";
+	/*Siempre al final*/
+
+
+/*EJECUCION DE CSS
+===================================*/	
+	h1 , h2 {
+
+		color: $color-brand-principal;
+		font-family: $font-brand-principal;
+
+	}
+
+	body {
+		background-color: $color-brand-secondary; 
+		color: $color-brand-principal;
+	}
+
+	.primaryPlaylist-title {
+		color: red;
+	}

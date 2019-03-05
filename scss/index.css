@@ -1,0 +1,61 @@
+/*Importacion de archivos parciales scss
+========================================*/
+/*Librerias, Settings y variables
+=================================*/
+/*======================
+$COLORS
+=======================*/
+/*Branding resources
+======================*/
+/*Branding color
+===============*/
+/*Degradez black - white*/
+/*Textures*/
+/* tipography
+=============== =*/
+/*Elementos bases HTML
+=========================*/
+/* line 1, basics-html/inputs/_buttons.scss */
+button {
+  background-color: red;
+  color: #fee;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* line 1, basics-html/inputs/_form.scss */
+#form, input {
+  background-color: #ffff00;
+}
+
+/*======================
+$TITLES
+=======================*/
+/* line 6, basics-html/text/_titles.scss */
+h1, h2, h3, h4 {
+  font-family: arial, sans-serif;
+}
+
+/*Elementos de interfaz
+=========================*/
+/*Utilities
+=============*/
+/*Siempre al final*/
+/*EJECUCION DE CSS
+===================================*/
+/* line 28, index.scss */
+h1, h2 {
+  color: red;
+  font-family: helvetica;
+}
+
+/* line 35, index.scss */
+body {
+  background-color: #eee;
+  color: red;
+}
+
+/* line 40, index.scss */
+.primaryPlaylist-title {
+  color: red;
+}
